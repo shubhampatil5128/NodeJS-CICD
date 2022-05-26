@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: zuul-api
+  name: nodejs
   labels:
     app: nodeapp
 spec:
@@ -26,7 +26,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-  name: zuul-api
+  name: nodejs
 spec:
   selector:
     app: nodeapp 

@@ -1,18 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodejs
+  name: node
   labels:
-    app: shu
+    app: node
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: shu
+      app: node
   template:
     metadata:
       labels:
-        app: shu
+        app: node
     spec:
       containers:
       - name: nodeserver
@@ -29,7 +29,7 @@ metadata:
   name: nodejs
 spec:
   selector:
-    app: shu
+    app: node
   type: NodePort
   ports:
   - protocol: TCP

@@ -35,4 +35,3 @@ spec:
   - protocol: TCP
     port: 9999
     targetPort: 3000
-    nodePort: 32470

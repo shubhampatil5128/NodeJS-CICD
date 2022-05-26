@@ -8,11 +8,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: nodeapp
+      app: nodejs
   template:
     metadata:
       labels:
-        app: nodeapp 
+        app: nodejs
     spec:
       containers:
       - name: nodeserver
@@ -29,7 +29,7 @@ metadata:
   name: nodejs
 spec:
   selector:
-    app: nodeapp 
+    app: nodejs
   type: NodePort
   ports:
   - protocol: TCP
